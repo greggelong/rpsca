@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const neigh = { R: 8, P: 4, S: 5, B: 7 };
+      
+      console.log(neigh)
+
+      // Convert the object into an array of key-value pairs
+      const keyValueArray = Object.entries(neigh);
+
+      // Sort the array based on values in descending order
+      keyValueArray.sort((a, b) => b[1] - a[1]);
+
+      // Create a new object from the sorted array
+      const sortedNeigh = Object.fromEntries(keyValueArray);
+      
+      console.log(sortedNeigh)
+
+      // delete the blank spaces from sorted list so you dont fill with blank
+      delete sortedNeigh.B
+
+
+      console.log(sortedNeigh);
+
+      // if cell == B  then fill with largest key that is not B
+
+      const largestKey = Object.keys(sortedNeigh)[0];
+      console.log("fill blank with",largestKey,typeof largestKey); // This will give you the key with the largest value
+
+      
+      //const sortedNlist = Object.keys(sortedNeigh);
+      //console.log(sortedNlist)\
+
+      // for the logic of checking if one is greater than the other we dont need the sorted
+      // if cell == R
+
+      if (neigh.P>neigh.R) {console.log("change rock to paper")}
+      //  if cell == P
+      if (neigh.S>neigh.P) {console.log("change to scissors")}
+      
+      // if cell == S
+      
+      if (neigh.R>neigh.S) {console.log("change to rock")}
+
+    </script>
+  </body>
+</html>
