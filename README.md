@@ -40,7 +40,11 @@ so I have added a copy error when copying one generation to the next
 
 with around a  one in 100 chance of picking a different type it creates something that mirrors living colonies at war with one another
 
-link to live page
+This "cross contamination" creates a nice bacteria like growth and destruction with pockets of rock growing inside an expanse of scissors and paper growing inside of rock. 
+
+This is a different result to other implementations with other rules. some linked below.
+
+link to live page of my rock paper scissors ca
 
 https://greggelong.github.io/rpsca
 
