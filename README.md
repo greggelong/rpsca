@@ -40,6 +40,14 @@ so I have added a copy error when copying one generation to the next
 
 with around a  one in 100 chance of picking a different type it creates something that mirrors living colonies at war with one another
 
+link to live page
+
+https://greggelong.github.io/rpsca
 
 
+some links to papers and other implementations with different rules
+
+https://softologyblog.wordpress.com/2018/03/23/rock-paper-scissors-cellular-automata/
+
+https://web2.qatar.cmu.edu/~gdicaro/15382/additional/rock-paper-scissor-bacterial-diffusion-CA.pdf
  
