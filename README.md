@@ -1,4 +1,4 @@
-#Rock Paper Scissors Cellular Automata
+# Rock Paper Scissors Cellular Automata
 
 
 I have seen the concept implemented but I did not find any rule sets for it.
@@ -9,7 +9,7 @@ I start by created a grid of 32 by 32 cells, which is smaller than most implemen
 
 I have two grids one for updating and one for the current, as in other CAs
 
-##The rule set I started with (then abandoned) was:
+## The rule set I started with (then abandoned) was:
     
     if any killer exists in that cells neighborhood that cell takes the killers type
 
@@ -22,7 +22,7 @@ I have two grids one for updating and one for the current, as in other CAs
 
 
 
-##The second and current rule set looks at the total number of each type in the neighborhood:
+## The second and current rule set looks at the total number of each type in the neighborhood:
 
     -if the cell is blank it takes the type that is greatest non blank  type
     -- this makes the cells seem to grow like bacteria
