@@ -1,15 +1,15 @@
-# Rock Paper Scissors Cellular Automata
+#Rock Paper Scissors Cellular Automata
 
 
-I have seen the concept implemented but I did not see any rule sets for it.
+I have seen the concept implemented but I did not find any rule sets for it.
 
-So I am trying to do this from scratch but my results
+So I am trying to do this from scratch.
 
 I start by created a grid of 32 by 32 cells, which is smaller than most implementations I have see
 
 I have two grids one for updating and one for the current, as in other CAs
 
-The rule set I started with was:
+The rule set I started with (then abandoned) was:
     if any killer exists in that cells neighborhood that cell takes the killers type
 
     for example if the cell you are looking at is ROCK and their is PAPER in any of the 8 neighbor cells
