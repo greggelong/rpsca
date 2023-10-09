@@ -2,10 +2,11 @@ let cnv;
 let grid = [];
 let nextGrid = [];
 let pop = ["R", "P", "S","B"];
-let gsz = 32//10//80; // 32
-let sz = 25//80;//10  //25
+let gsz = 160//10//80; // 32
+let sz = 5//80;//10  //25 
 let gen = 1;
 let clr;
+let goff; // variable for showing only part of the grid
 
 function setup() {
   // center canvas in sketch
@@ -50,14 +51,25 @@ function makeGrid() {
 }
 
 function showGrid() {
-  //print(grid);
+  if (mouseX<width/4){
+    // small grid big cell
+    sz =25
+    goff = 128
+  }else{
+    // small cell big grid
+    sz = 5
+    goff =0
+  }
   for (let j = 0; j < gsz; j++) {
     for (let i = 0; i < gsz; i++) {
       fill(clr[pop.indexOf(grid[j][i])]);
       rect(i * sz, j * sz, sz, sz);
 
+      if(sz===25){
+
       fill(255);
       text(grid[j][i], i * sz + sz / 4, j * sz + sz / 4);
+      }
     }
   }
 }
