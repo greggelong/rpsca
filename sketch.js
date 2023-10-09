@@ -7,11 +7,11 @@ let sz = 5//80;//10  //25
 let gen = 1;
 let clr;
 let goff; // variable for showing only part of the grid
+let inst;
 
 function setup() {
   // center canvas in sketch
-  createP("Rock, Paper, Scissors bacteria with cross contamination")
-  createP("Move mouse to left to see zoomed in view.")
+   
   cnv = createCanvas(800, 800);
   let cx = floor((windowWidth - cnv.width) / 2);
   let cy = floor((windowHeight - cnv.height) / 2);
@@ -20,6 +20,8 @@ function setup() {
   clr = [color(139, 0, 0), color(255, 105, 180), color(127), color(0)];
   textAlign(LEFT, TOP);
   noStroke()//stroke(255);
+  inst = createP("Move mouse to left to see zoomed in view")
+  inst.position(cx,cy+cnv.height)
    
   makeGrid();
   showGrid();
