@@ -52,7 +52,7 @@ function makeGrid() {
 }
 
 function showGrid() {
-  if (mouseX<width/4){
+  if (mouseX<width/2){
     // small grid big cell
     sz =25
     goff = 128
@@ -61,8 +61,8 @@ function showGrid() {
     sz = 5
     goff =0
   }
-  for (let j = 0; j < gsz; j++) {
-    for (let i = 0; i < gsz; i++) {
+  for (let j = 0; j < gsz-goff; j++) {
+    for (let i = 0; i < gsz-goff; i++) {
       fill(clr[pop.indexOf(grid[j][i])]);
       rect(i * sz, j * sz, sz, sz);
 
