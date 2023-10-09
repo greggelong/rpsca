@@ -18,6 +18,7 @@ function setup() {
   clr = [color(139, 0, 0), color(255, 105, 180), color(127), color(0)];
   textAlign(LEFT, TOP);
   noStroke()//stroke(255);
+  createP("Move mouse to left to see zoomed in view.")
   makeGrid();
   showGrid();
   frameRate(20)
