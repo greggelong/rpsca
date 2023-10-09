@@ -31,7 +31,7 @@ I have two grids one for updating and one for the current, as in other CAs
 
     -if the cell is paper and there are more scissors than paper in the   neighborhood (including the cell itself) --paper changes to scissors
 
-    -if the cell is scissors and there are more rocks than scissors in the neighborhood (including the cell itself) --scissors changes to paper
+    -if the cell is scissors and there are more rocks than scissors in the neighborhood (including the cell itself) --scissors changes to rocks
 
 
 This leads to a boring state rather quickly as each type carves out its place
